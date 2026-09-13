@@ -428,6 +428,8 @@ img { max-width:100%; display:block; }
     border:2px dashed rgba(180,160,140,0.3);
 }
 .paper-card.highlight { border-left:4px solid var(--ach-header); }
+a.paper-card { display:block; }
+.paper-card .card-more { margin-top:10px; font-family:'Fredoka',cursive; font-size:0.78rem; color:var(--act-header); font-weight:600; }
 
 .folder-section-title {
     font-family:'Fredoka',cursive; font-size:1.1rem; font-weight:600; color:var(--ink-mid);
