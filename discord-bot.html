@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Discord Bot &mdash; Opportunity Tracker &mdash; Shivanshee Patel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="top-nav">
+    <a href="activities.html" class="back-btn">&#8592; Activities</a>
+    <div class="nav-tabs">
+        <a href="index.html" class="nav-tab nav-tab-about">About</a>
+        <a href="activities.html" class="nav-tab nav-tab-act active">Activities</a>
+        <a href="achievements.html" class="nav-tab nav-tab-ach">Achievements</a>
+        <a href="volunteering.html" class="nav-tab nav-tab-vol">Volunteering</a>
+        <a href="contact.html" class="nav-tab nav-tab-con">Contact</a>
+    </div>
+</nav>
+
+<div class="open-folder folder-act">
+
+    <div class="folder-header">
+        <div class="page-bookmarks" aria-hidden="true">
+            <div class="bm bm-peach"></div>
+            <div class="bm bm-yell"></div>
+            <div class="bm bm-green"></div>
+        </div>
+        <svg class="folder-header-clip" viewBox="0 0 60 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M 18 30 L 12 4 L 28 4 Z" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linejoin="round"/>
+            <path d="M 42 30 L 32 4 L 48 4 Z" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linejoin="round"/>
+            <rect x="4" y="28" width="52" height="14" rx="3" fill="rgba(255,255,255,0.35)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+        </svg>
+        <div>
+            <h1>Opportunity-Tracking AI Bot</h1>
+            <p class="folder-header-sub">Independent Passion Project &nbsp;&bull;&nbsp; Discord + AI</p>
+        </div>
+    </div>
+
+    <div class="folder-body">
+        <div class="body-inner">
+
+            <div class="paper-card reveal">
+                <div class="card-header">
+                    <div class="card-title">Application Tracker AI</div>
+                    <div class="card-year">2026&ndash;present</div>
+                </div>
+                <div class="card-tags">
+                    <span class="tag tag-act">Personal Project</span>
+                    <span class="tag tag-ach">Discord Bot</span>
+                    <span class="tag tag-con">AI &middot; RAG</span>
+                </div>
+                <p class="card-text">A Discord bot that tracks application deadlines for programs, scholarships, competitions, and internships &mdash; and answers questions about them using an AI assistant. It uses retrieval-augmented generation (RAG) over a local SQLite database, so it never invents a fact, deadline, or link.</p>
+            </div>
+
+            <div id="cost" class="folder-section-title reveal">Cost</div>
+            <div class="cheat-sheet cs-blue reveal">
+                <div class="cheat-sheet-header">$0 Software Cost</div>
+                <ul>
+                    <li>Discord bots are free to run.</li>
+                    <li>AI answers are powered by Groq &mdash; free tier, no credit card required.</li>
+                    <li>Whether hosting is also free depends on where the bot runs &mdash; a free-tier host keeps it at $0/month, while a dedicated server would cost more.</li>
+                </ul>
+            </div>
+
+            <div id="data" class="folder-section-title reveal">What's Behind It</div>
+            <div class="paper-card reveal">
+                <p class="card-text">Seeded from a <em>2026&ndash;2027 Student Opportunity Tracker</em> spreadsheet &mdash; 86 curated programs across Medical/Healthcare, Tech/STEM, Business/Entrepreneurship, Humanities/Law/Politics, and Leadership/Civic, each with eligibility requirements, deadlines, and priority already filled in.</p>
+            </div>
+
+            <div id="honest" class="folder-section-title reveal">Built to Be Honest, Not Flashy</div>
+            <div class="paper-card reveal">
+                <p class="card-text">There is deliberately no automated Open/Closed status indicator (no colored circle). Earlier versions tried keyword-based scraping to detect this automatically, but it wasn't reliable enough across dozens of different program websites to show students a status light they could trust. Instead, the bot shows the real Applications Open / Deadline dates on file and lets the student judge for themselves &mdash; more honest than a guess.</p>
+            </div>
+
+            <div id="use" class="folder-section-title reveal">Two Ways to Use It</div>
+            <div class="card-grid reveal">
+                <div class="paper-card">
+                    <div class="card-header"><div class="card-title">Quick Q&amp;A</div></div>
+                    <div class="card-tags"><span class="tag tag-con">@ApplicationTracker AI</span></div>
+                    <p class="card-text">Ask a question and get a grounded, structured "Executive Advisor" briefing back &mdash; an executive summary, program cards, and a strategic recommendation.</p>
+                </div>
+                <div class="paper-card">
+                    <div class="card-header"><div class="card-title">Full Roadmap</div></div>
+                    <div class="card-tags"><span class="tag tag-con">/roadmap</span></div>
+                    <p class="card-text">A full phased "User Journey" career-planning roadmap for a specific grade level, interest area, and start timeline &mdash; grouping tracked programs into timeline phases with cost, format, and recommendation-letter details, only stated when the database actually confirms them (otherwise it says "verify on the official page" rather than guessing).</p>
+                </div>
+            </div>
+
+            <div id="video" class="folder-section-title reveal">Watch It In Action</div>
+            <div class="paper-card reveal">
+                <p class="card-text" style="margin-bottom:14px;">A short walkthrough of the bot in action:</p>
+                <video controls preload="metadata" style="width:100%;border-radius:10px;box-shadow:var(--shadow-card);">
+                    <source src="videos/discord-bot-tutorial.mp4" type="video/mp4">
+                    Your browser does not support embedded video. <a href="videos/discord-bot-tutorial.mp4">Download the video</a> instead.
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer class="page-footer">&copy; 2026 Shivanshee Patel &nbsp;&mdash;&nbsp; Huron Heights Secondary School</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
